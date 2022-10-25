@@ -76,7 +76,7 @@ function Register() {
         <Form.Text className=" fw-bold d-block text-danger mb-3">
         {error}
       </Form.Text>
-      
+       
         <h6 className=' mb-3 pb-2'> Already have an account.?? Please <Link to='/login'>Login</Link> </h6>
         
       </Form>
