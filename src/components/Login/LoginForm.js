@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 
 function LoginForm() {
@@ -57,7 +57,8 @@ function LoginForm() {
       </Button>
       
       <Form.Text className=" fw-bold d-block text-danger mb-3">
-        {error}
+       <p>{error}</p>
+        <h6 className=' mb-3 pb-2'> Don't have any account yet.?? Please <Link to='/register'>Register</Link> </h6>
       </Form.Text>
     </Form>
 
