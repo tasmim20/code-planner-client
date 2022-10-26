@@ -61,7 +61,7 @@ const Header = () => {
                         
                     </Nav>
                     <Nav>
-                    <Link className='me-5 mt-2 text-decoration-none text-light' to='/courses'>Courses</Link>  
+                    <Link className='me-5 mt-2 text-decoration-none text-light' to='/coursePage'>Courses</Link>  
 
                            <Nav.Link href="#features " className='text-light'>
                             {

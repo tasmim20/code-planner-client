@@ -1,0 +1,22 @@
+.category1 {
+    text-decoration: none;
+    color: rebeccapurple;
+    text-align: center;
+    padding: 5px 15px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px red;
+    background-color: white;
+    
+}
+.courses{
+    margin-bottom: 30px;
+}
+
+.rightSide{
+    
+    box-shadow:  5px 5px 5px 5px gray;
+    padding: 35px ;
+    padding-bottom: 150px;
+    padding-top: 80px;
+    background-color: skyblue;
+}
