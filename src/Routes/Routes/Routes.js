@@ -1,12 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
 import Blog from "../../components/Blog/Blog";
 import Category from "../../components/CoursePage/Category/Category";
+import PremiumPage from "../../components/CoursePage/CourseDetails/PremiumPage/PremiumPage";
 import CoursePage from "../../components/CoursePage/CoursePage/CoursePage";
 import Home from "../../components/Home/Home";
 import Login from "../../components/Login/Login";
 import LoginForm from "../../components/Login/LoginForm";
 import Register from "../../components/Login/Register/Register";
 import Main from "../../layout/Main";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 export const routes = createBrowserRouter([
     {
@@ -33,6 +35,10 @@ export const routes = createBrowserRouter([
             {
                 path:'/login',
                 element:<Login></Login>
+            },
+            {
+                path:'/premiumPage',
+                element:<PrivateRoute><PremiumPage></PremiumPage></PrivateRoute>
             },
             {
                 path:'/loginForm',

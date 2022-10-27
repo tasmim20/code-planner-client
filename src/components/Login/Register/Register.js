@@ -1,12 +1,16 @@
 import { useContext, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 
 function Register() {
 
     const {createUser} = useContext(AuthContext);
+
+    const navigate = useNavigate();
+    const location = useLocation();
+     const from = location.state?.from?.pathname || '/';
 
     const [error, setError] = useState('');
 
@@ -25,6 +29,7 @@ function Register() {
         console.log(user);
         setError('');
         form.reset();
+        navigate(from, {replace:true});
        
     })
     .catch(error =>{
@@ -68,7 +73,7 @@ function Register() {
     
      
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          {/* <Form.Check type="checkbox" label="Check me out" /> */}
+ 
         </Form.Group>
         <Button variant="primary" type="login" className='px-5 mb-5'>
           Register

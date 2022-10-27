@@ -1,9 +1,10 @@
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
-function GridLeftSide({course}) {
+function LeftSide({course}) {
 
-    const {image, name} = course;
+    const {image, name, id} = course;
 
     
   return (
@@ -13,7 +14,9 @@ function GridLeftSide({course}) {
       <img  src={image} className="card-img-top" ></img>
       <div className="card-body d-flex justify-content-between py-3">
         <h5 className="card-title fw-bold text-danger">{name}</h5>
-       <Button variant='light' className='btn-outline-info text-dark fw-bold'>Details</Button>
+       <Button variant='light' className='btn-outline-info text-dark fw-bold'><Link className='text-decoration-none'  to={`/category/${id}`}>details</Link>
+            </Button>
+
       
       </div>
     </div>
@@ -24,6 +27,6 @@ function GridLeftSide({course}) {
   );
 }
 
-export default GridLeftSide;
+export default LeftSide;
 
 

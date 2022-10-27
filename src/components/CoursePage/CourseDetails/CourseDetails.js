@@ -1,6 +1,7 @@
 import { Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
 function CourseDetails({course}) {
 
@@ -22,6 +23,9 @@ function CourseDetails({course}) {
         <div className='text-light d-flex justify-content-between'>
         <h6 >Course Duration: {instructor.course_duration}</h6>
         <h6>Course-Fee : {course_fee}</h6>
+        </div>
+        <div>
+        <Link className='text-decoration-none text-light' to='/premiumPage'>  <Button variant='danger' className='text-light' >Get Premium Access</Button></Link>
         </div>
 
       </Card.Text>
