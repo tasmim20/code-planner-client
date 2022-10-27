@@ -25,7 +25,7 @@ function CourseDetails({course}) {
         <h6>Course-Fee : {course_fee}</h6>
         </div>
         <div>
-        <Link className='text-decoration-none text-light' to={`/premiumPage/${_id}`} >  <Button variant='danger' className='text-light' >Get Premium Access</Button></Link>
+        <Link className='text-decoration-none text-light' to='/premiumPage' >  <Button variant='danger' className='text-light' >Get Premium Access</Button></Link>
         </div>
 
       </Card.Text>

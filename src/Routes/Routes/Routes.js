@@ -38,7 +38,8 @@ export const routes = createBrowserRouter([
             },
             {
                 path:'/premiumPage',
-                element:<PrivateRoute><PremiumPage></PremiumPage></PrivateRoute>
+                element:<PrivateRoute><PremiumPage></PremiumPage></PrivateRoute>,
+              
             },
             {
                 path:'/loginForm',

@@ -1,7 +1,7 @@
 
 
 Website Name: Code-Planner;
-Live-site link: https://code-planner-f4fc4.web.app/
+Live-site link: https://code-planner-f4fc4.web.app
 
 Description:
 1.Authentication system added for security of some information;
