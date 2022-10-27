@@ -14,8 +14,8 @@ function LeftSide({course}) {
       <img  src={image} className="card-img-top" ></img>
       <div className="card-body d-flex justify-content-between py-3">
         <h5 className="card-title fw-bold text-danger">{name}</h5>
-       <Button variant='light' className='btn-outline-info text-dark fw-bold'><Link className='text-decoration-none'  to={`/category/${id}`}>details</Link>
-            </Button>
+        <Link className='text-decoration-none'  to={`/category/${id}`}> <Button variant='light' className='btn-outline-info text-dark fw-bold'>details
+            </Button></Link>
 
       
       </div>

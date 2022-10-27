@@ -1,6 +1,6 @@
 import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 import React, { useContext } from 'react';
-import { ButtonGroup } from 'react-bootstrap';
+import { ButtonGroup} from 'react-bootstrap';
 import  Button from 'react-bootstrap/Button';
 import { FaGoogle, FaGithub,FaEnvelope } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -44,17 +44,18 @@ const Login = () => {
 
 
     return (
-        <div className='mb-5 d-block'>
+    
+         <div className='mb-5 d-block py-5 shadow-lg rounded container bg-info '>
            
 
-           <div className=' mx-auto'>
+           <div className=' mx-auto bg-light  my-5 py-5 shadow-lg rounded'>
             <ButtonGroup vertical className='w-25 d-flex justify-content-center align-items-center mx-auto'>
-              <h2 className='my-5  text-danger'> Welcome to Code-Planner</h2>
+              <h2 className='mb-2  text-danger py-3'>Welcome to C.Planner</h2>
                <h6 className='mb-3'>Log in with one of the following:</h6>
-               <Button variant='primary mb-3  '><FaEnvelope className='text-dark'></FaEnvelope> <Link className='text-decoration-none text-dark fw-bold' to="/loginForm"> Login With Email</Link> </Button>
-               <Button onClick={handleGoogleSignIn} variant="info mb-3 text-dark fw-bold"><FaGoogle></FaGoogle> Login With Google</Button>
+               <Button variant='outline-danger ' className='mb-3'><Link className='text-decoration-none text-dark fw-bold' to="/loginForm">  <FaEnvelope className='text-dark'></FaEnvelope> Login With Email </Link></Button>
+               <Button onClick={handleGoogleSignIn} variant="warning mb-3 text-dark fw-bold"><FaGoogle></FaGoogle> Login With Google</Button>
                <Button onClick={handleGithubSignIn} variant='success  text-dark fw-bold'><FaGithub></FaGithub> Login With Github</Button>
-               <h6 className='my-3'> Do not have an account.?? Please <Link to='/register'>Register</Link> </h6>
+               <h6 className='my-3 text-dark'> Do not have an account.?? Please <Link to='/register'>Register</Link> </h6>
          
             </ButtonGroup>
             
@@ -62,6 +63,7 @@ const Login = () => {
            </div>
 
         </div>
+      
     );
 };
 
