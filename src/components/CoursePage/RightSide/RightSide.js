@@ -4,6 +4,7 @@ import './RightSide.css'
 
 const RightSide = () => {
     const [categories, setCategories] = useState([]);
+  
 
     useEffect( () =>{
         fetch('http://localhost:5000/courses-categories')
@@ -14,7 +15,7 @@ const RightSide = () => {
         
            <div className='rightSide'>
            {
-                categories.map(category => <li className='courses' key={category.id}><Link  className='category1' to={`/category/${category.id}`}>{category.name}</Link></li>)
+                categories.map(category => <li className='courses' key={category.id} ><Link  className='category1'  to={`/category/${category.id}`}>{category.name}</Link></li>)
             }
            </div>
         

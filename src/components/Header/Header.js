@@ -22,7 +22,7 @@ const Header = () => {
     
 
     return (
-        <Navbar collapseOnSelect className='mb-4' expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect className='mb-4 sticky-top' expand="lg" bg="dark" variant="dark">
             <Container>
                 <Navbar.Brand className="text-danger"><FaCuttlefish className='mb-1'></FaCuttlefish> Code-Planner</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

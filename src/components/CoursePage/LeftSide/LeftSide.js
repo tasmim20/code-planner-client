@@ -1,4 +1,4 @@
-import { Button, ButtonGroup } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 
 function GridLeftSide({course}) {
@@ -14,6 +14,7 @@ function GridLeftSide({course}) {
       <div className="card-body d-flex justify-content-between py-3">
         <h5 className="card-title fw-bold text-danger">{name}</h5>
        <Button variant='light' className='btn-outline-info text-dark fw-bold'>Details</Button>
+      
       </div>
     </div>
   </div>

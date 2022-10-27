@@ -26,7 +26,8 @@ export const routes = createBrowserRouter([
             },
             {
                 path:'/category/:id',
-                element:<Category></Category>
+                element:<Category></Category>,
+                loader: ({params}) => fetch(`http://localhost:5000/category/${params.id}`)
               
             },
             {
@@ -44,6 +45,10 @@ export const routes = createBrowserRouter([
             {
                 path:'blog',
                 element: <Blog></Blog>
+            },
+            {
+                path:'*',
+                element: <div> <h2>404</h2> <p>This route not found</p></div>
             }
         ]
     
