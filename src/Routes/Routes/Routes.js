@@ -23,13 +23,13 @@ export const routes = createBrowserRouter([
             {
               path: '/coursePage',
               element: <CoursePage></CoursePage>,
-              loader: () =>fetch('http://localhost:5000/courses-categories')
+              loader: () =>fetch('https://code-planner-server.vercel.app/courses-categories')
            
             },
             {
                 path:'/category/:id',
                 element:<Category></Category>,
-                loader: ({params}) => fetch(`http://localhost:5000/category/${params.id}`)
+                loader: ({params}) => fetch(`https://code-planner-server.vercel.app/category/${params.id}`)
               
             },
             {
@@ -54,7 +54,7 @@ export const routes = createBrowserRouter([
             },
             {
                 path:'*',
-                element: <div> <h2>404</h2> <p>This route not found</p></div>
+                element: <div className="text-center text-danger"> <h2>404</h2> <p>This route not found</p></div>
             }
         ]
     

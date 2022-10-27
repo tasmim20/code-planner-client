@@ -52,9 +52,9 @@ const Login = () => {
             <ButtonGroup vertical className='w-25 d-flex justify-content-center align-items-center mx-auto'>
               <h2 className='mb-2  text-danger py-3'>Welcome to C.Planner</h2>
                <h6 className='mb-3'>Log in with one of the following:</h6>
-               <Button variant='outline-danger ' className='mb-3'><Link className='text-decoration-none text-dark fw-bold' to="/loginForm">  <FaEnvelope className='text-dark'></FaEnvelope> Login With Email </Link></Button>
-               <Button onClick={handleGoogleSignIn} variant="warning mb-3 text-dark fw-bold"><FaGoogle></FaGoogle> Login With Google</Button>
+               <Button onClick={handleGoogleSignIn} variant="outline-danger mb-3 text-dark fw-bold"><FaGoogle></FaGoogle> Login With Google</Button>
                <Button onClick={handleGithubSignIn} variant='success  text-dark fw-bold'><FaGithub></FaGithub> Login With Github</Button>
+               <Button variant='primary ' className='mb-3 mt-3'><Link className='text-decoration-none text-dark fw-bold' to="/loginForm">  <FaEnvelope className='text-dark'></FaEnvelope> Login With Email </Link></Button>
                <h6 className='my-3 text-dark'> Do not have an account.?? Please <Link to='/register'>Register</Link> </h6>
          
             </ButtonGroup>

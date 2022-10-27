@@ -12,6 +12,7 @@ import { Button, Image } from 'react-bootstrap';
 const Header = () => {
 
     const {user ,logOut} = useContext(AuthContext);
+    console.log(user)
     const handleLogOut = () =>{
         logOut()
         .then( () =>{})
@@ -28,27 +29,10 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        {/* <Nav.Link href="#features " className='text-light'>
-                            {
-                                user?.uid ? 
-                                <>
-                                    <span>{user?.displayName}</span>
-                                    <Button variant='secondary' onClick={handleLogOut}>Log Out</Button>        
-                                </>
-                               
-                                :
-                                <>
-                                <Link to='/login'>Login</Link>
-                                <Link to='/register'>Register</Link>
-                                </>
-                            }
-                            
-                            
-                            
-                            </Nav.Link> */}
+                    
                         <Nav.Link href="#features " className='text-light'>
-                            {user?.PhotoURL ?
-                            <Image style ={{height:'30px'}} roundedCircle src={user?.PhotoURL}></Image>
+                            {user?.photoURL ?
+                            <Image style ={{height:'30px'}} roundedCircle src={user?.photoURL}></Image>
                            : <FaUser></FaUser>
 
                             }
@@ -68,7 +52,8 @@ const Header = () => {
                                 user?.uid ? 
                                 <>
                                     <span>{user?.displayName}</span>
-                                    <Button variant='secondary' onClick={handleLogOut}>Log Out</Button>        
+                                    <Button variant='secondary' onClick={handleLogOut}>Log Out</Button>   
+
                                 </>
                                
                                 :

@@ -51,7 +51,7 @@ function LoginForm() {
         <Form.Control type="password" name='password' placeholder="Password" required />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        {/* <Form.Check type="checkbox" label="Check me out" /> */}
+    
       </Form.Group>
       <Button variant="primary" type="login" className='px-5 mb-3'>
         Login

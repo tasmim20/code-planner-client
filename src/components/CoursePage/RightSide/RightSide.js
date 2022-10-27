@@ -7,7 +7,7 @@ const RightSide = () => {
   
 
     useEffect( () =>{
-        fetch('http://localhost:5000/courses-categories')
+        fetch('https://code-planner-server.vercel.app/courses-categories')
         .then(res => res.json()
         .then(data => setCategories(data)))
     })
