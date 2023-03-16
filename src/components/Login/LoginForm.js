@@ -37,12 +37,12 @@ function LoginForm() {
    }
 
   return (
-<div className='border border-dark shadow-lg w-50 bg-info mb-5 mt-5 mx-auto'>
-<Form onSubmit={handleSubmit} className='  w-50 mt-5 mx-auto'>
-    <h4 className='f-semibold pb-4 pt-3'>Please Enter Email & Password.</h4>
+<div style={{width:"20rem"}} className='border  shadow-lg container pb-4  mb-5 mt-5 mx-auto'>
+<Form onSubmit={handleSubmit} className='   mt-5 mx-auto'>
+    <h4 className='fw-bold text-center pb-4 pt-2'>Login Now.</h4>
 <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" name='email' placeholder="Enter email" required />
+        <Form.Control className='lg:w-50' type="email" name='email' placeholder="Enter email" required />
      
       </Form.Group>
 
@@ -53,13 +53,13 @@ function LoginForm() {
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
     
       </Form.Group>
-      <Button variant="primary" type="login" className='px-5 mb-3'>
+      <Button variant="info" type="login" className='px-5 mb-3'>
         Login
       </Button>
       
-      <Form.Text className=" fw-bold d-block text-danger mb-3">
+      <Form.Text className=" fw-bold d-block  mb-3">
        <p>{error}</p>
-        <h6 className=' mb-3 pb-2'> Don't have any account yet.?? Please <Link to='/register'>Register</Link> </h6>
+        <h6 className=' mb-3 pb-2'> Don't have any account .?? <Link to='/register'>Register</Link> </h6>
       </Form.Text>
     </Form>
 

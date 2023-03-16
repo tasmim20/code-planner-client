@@ -45,13 +45,13 @@ const Login = () => {
 
     return (
     
-         <div className='mb-5 d-block py-5 shadow-lg rounded container bg-info '>
+         <div  className='mb-5 d-block  rounded container  '>
            
 
-           <div className=' mx-auto bg-light  my-5 py-5 shadow-lg rounded'>
-            <ButtonGroup vertical className='w-25 d-flex justify-content-center align-items-center mx-auto'>
-              <h2 className='mb-2  text-danger py-3'>Welcome to C.Planner</h2>
-               <h6 className='mb-3'>Log in with one of the following:</h6>
+           <div style={{width:"20rem"}} className=' mx-auto bg-light py-5 p-2 my-5 shadow-lg rounded'>
+            <ButtonGroup vertical className='d-flex justify-content-center align-items-center mx-auto'>
+              <h2 className='mb-4'>Login Now</h2>
+              
                <Button onClick={handleGoogleSignIn} variant="outline-danger mb-3 text-dark fw-bold"><FaGoogle></FaGoogle> Login With Google</Button>
                <Button onClick={handleGithubSignIn} variant='success  text-dark fw-bold'><FaGithub></FaGithub> Login With Github</Button>
                <Button variant='primary ' className='mb-3 mt-3'><Link className='text-decoration-none text-dark fw-bold' to="/loginForm">  <FaEnvelope className='text-dark'></FaEnvelope> Login With Email </Link></Button>

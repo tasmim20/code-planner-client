@@ -8,7 +8,7 @@ function LeftSide({course}) {
 
     
   return (
-     <div className='card  bg-dark shadow-lg mb-5'>
+     <div className='card   shadow-lg mb-5'>
           <div className="col shadow-lg ">
     <div className="card">
       <img  src={image} style={{height:'250px'}} className="card-img-top" ></img>
